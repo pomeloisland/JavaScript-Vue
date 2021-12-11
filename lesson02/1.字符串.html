@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        'use strict';
+        var arr = [3,4,5];
+        //arr.name = "123";早期的漏洞
+        for(let x in arr){
+            console.log(x)
+        }
+        for(var x of arr){
+            console.log(x)
+        }
+        var map = new Map([['tom',100],['jack',90],['pomeloisland',80]]);
+        for (let x of map){
+            console.log(x)
+        }
+        var set = new Set([5,6,7]);
+        for(let x of set){
+            console.log(x)
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>
